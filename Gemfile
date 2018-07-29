@@ -65,5 +65,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
- gem 'sqlite3', '~> 1.3', '>= 1.3.11'
-gem 'pg'
+gem 'pg', '~> 0.18.4'
