@@ -198,7 +198,9 @@ h5{
   background: white;
   color: black;
 }
-
+.blog-posts{
+  overflow: hidden;
+  
 p.card-text{
   border-top: 0;
   border-bottom: 0;
@@ -247,7 +249,7 @@ footer{
   /* z-index: -800000000000; */
 }
 footer .footer-stuff{
-  width: 88vw;
+  // width: 88vw;
 }
 footer a {
   color: white;
