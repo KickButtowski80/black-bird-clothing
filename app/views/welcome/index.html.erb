@@ -19,44 +19,43 @@
     <div class=" clothes-pics">
       <div class="row">
         <div class="col-md-4">
-          <img src="./images/model1.jpg" alt="">
+          <%= image_tag("model1.jpg") %>
           <h5> BlackBird Sweater - <strong> $135</strong></h5>
         </div>
         <div class="col-md-4">
-          <img src="./images/model2.jpg" alt="">
-          <h5> BlackBird Jacket - <strong> $135</strong></h5>
-        </div>
-        <div class="col-md-4">
-          <img src="./images/model3.jpg" alt="">
-          <h5> BlackBird Trousers - <strong> $135</strong></h5>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="./images/model1.jpg" alt="">
-          <h5> BlackBird Sweater - <strong> $135</strong></h5>
-        </div>
-        <div class="col-md-4">
-          <img src="./images/model2.jpg" alt="">
-          <h5> BlackBird Jacket - <strong> $135</strong></h5>
-        </div>
-        <div class="col-md-4">
-          <img src="./images/model3.jpg" alt="">
-          <h5> BlackBird Trousers - <strong> $135</strong></h5>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="./images/model1.jpg" alt="">
-          <h5> BlackBird Sweater - <strong> $135</strong></h5>
-        </div>
-        <div class="col-md-4">
-          <!--<img src="./images/model2.jpg" alt="">-->
           <%= image_tag("model2.jpg") %>
           <h5> BlackBird Jacket - <strong> $135</strong></h5>
         </div>
         <div class="col-md-4">
-          <img src="./images/model3.jpg" alt="">
+          <%= image_tag("model3.jpg") %>
+          <h5> BlackBird Trousers - <strong> $135</strong></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <%= image_tag("model1.jpg") %>
+          <h5> BlackBird Sweater - <strong> $135</strong></h5>
+        </div>
+        <div class="col-md-4">
+          <%= image_tag("model2.jpg") %>
+          <h5> BlackBird Jacket - <strong> $135</strong></h5>
+        </div>
+        <div class="col-md-4">
+          <%= image_tag("model3.jpg") %>
+          <h5> BlackBird Trousers - <strong> $135</strong></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <%= image_tag("model1.jpg") %>
+          <h5> BlackBird Sweater - <strong> $135</strong></h5>
+        </div>
+        <div class="col-md-4">
+          <%= image_tag("model2.jpg") %>
+          <h5> BlackBird Jacket - <strong> $135</strong></h5>
+        </div>
+        <div class="col-md-4">
+          <%= image_tag("model3.jpg") %>
           <h5> BlackBird Trousers - <strong> $135</strong></h5>
         </div>
       </div>
@@ -99,7 +98,8 @@
       <div class="row">
         <div class="col-md-3 ">
           <div class="card post-1">
-            <img class="card-img-top" src="./images/posts/one.jpg" alt="Card image cap">
+            <!--<img class="card-img-top" src="./images/posts/one.jpg" alt="Card image cap">-->
+            <%= image_tag "/assets/posts/one.jpg", class: 'card-img-top' %> 
             <div class="card-body">
               <h4 class="card-title">Card title</h4>
               <p class="card-text">Some quick example text to build on the card</p>
@@ -109,7 +109,7 @@
         </div>
         <div class="col-md-3 ">
           <div class="card post-2">
-            <img class="card-img-top" src="./images/posts/two.jpg" alt="Card image cap">
+            <%= image_tag "/assets/posts/two.jpg", class: 'card-img-top' %> 
             <div class="card-body">
               <h4 class="card-title">Card title</h4>
               <p class="card-text">Some quick example text to build on the card</p>
@@ -118,8 +118,8 @@
           </div>
         </div>
         <div class="col-md-3 ">
-          <div class="card post-3">
-            <img class="card-img-top" src="./images/posts/three.jpg" alt="Card image cap">
+          <div class="card post-3">         
+            <%= image_tag "/assets/posts/three.jpg", class: 'card-img-top' %> 
             <div class="card-body">
               <h4 class="card-title">Card title</h4>
               <p class="card-text">Some quick example text to build on the card</p>
@@ -129,7 +129,7 @@
         </div>
         <div class="col-md-3 ">
           <div class="card post-4">
-            <img class="card-img-top" src="./images/posts/four.jpg" alt="Card image cap">
+            <%= image_tag "/assets/posts/four.jpg", class: 'card-img-top' %> 
             <div class="card-body">
               <h4 class="card-title">Card title</h4>
               <p class="card-text">Some quick example text to build on the card</p>
@@ -140,8 +140,8 @@
       </div>
     </div>
   </div>
-   <div class='container-fluid' style="position: relative; z-index: -1111111111111111111111;">
-    <footer>
+   <footer class='container-fluid'>
+    <!--<footer>-->
       <div class="row footer-stuff">
         <div class="col-md-3">
           <strong>FIND US ON</strong>
@@ -181,6 +181,6 @@
           </form>
         </div>
       </div>
-    </footer>
-  </div>
+    <!--</footer>-->
+  </footer>
 

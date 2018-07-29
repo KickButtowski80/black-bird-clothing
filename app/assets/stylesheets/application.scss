@@ -42,7 +42,7 @@ img {
 #bird-box {
   position: relative;
   height: 100vh;
-  background-image: url(image_path('bird-bg2.jpg'));
+  background-image: url(image_path('bird-bg.jpg'));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -51,7 +51,7 @@ img {
 }
 
 .logo {
-  background-image: url('./images/black-bird-logo.svg');
+  background-image: url(image_path('black-bird-logo.svg'));
   height: 100px;
   width: 100vw;
   background-position: center top;
@@ -65,7 +65,7 @@ img {
 .fore-bird {
   width: 960px;
   height: 733px;
-  background-image: url('./images/fore-bird.png');
+  background-image: url(image_path('fore-bird.png'));
   background-repeat: no-repeat;
   background-position: right bottom;
   position: absolute;
@@ -76,7 +76,7 @@ img {
 .back-bird {
   width: 960px;
   height: 733px;
-  background-image: url('./images/back-bird.png');
+  background-image: url(image_path('back-bird.png'));
   background-repeat: no-repeat;
   background-position: top left;
   position: absolute;
@@ -109,7 +109,7 @@ img {
   height:90vh;
   width: 60vw;
   margin: 0 auto;
-  background-image: url(./images/model1.jpg);
+  background-image: url(image_path('model2.jpg'));
   background-position: center 0px;
   background-repeat: repeat-y;
   background-attachment: fixed;
@@ -238,11 +238,12 @@ justify-content: center;
 footer{
   background-color: black;
   color: white;
-  padding: 40px;
+  padding-top: 44px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+   z-index: -1111111111111111111111;
   /* z-index: -800000000000; */
 }
 footer .footer-stuff{
