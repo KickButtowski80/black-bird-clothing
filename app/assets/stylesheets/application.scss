@@ -1,0 +1,261 @@
+@import "bootstrap";
+:root{
+  font-size: calc(16px + 0.25vh);
+}
+
+body {
+  font-family: "Open Sans", sans-serif
+}
+/* div{
+  height: 2000px;
+} */
+h1 {
+  color: #ccc;
+  weight: 300;
+
+}
+
+h1, p {
+  text-align: center;
+}
+
+p {
+  width: 50%;
+  margin: 0 auto;
+    border-bottom: 1px solid #cacaca;
+    border-top: 1px solid #cacaca;
+}
+
+.content article {
+  padding: 100px 10vw;
+  marign: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+img {
+  max-width: 100%;
+
+}
+
+#bird-box {
+  position: relative;
+  height: 100vh;
+  background-image: url(image_path('bird-bg2.jpg'));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.logo {
+  background-image: url('./images/black-bird-logo.svg');
+  height: 100px;
+  width: 100vw;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50vh;
+  margin-top: -50px;
+  z-index: 10000000;
+}
+
+.fore-bird {
+  width: 960px;
+  height: 733px;
+  background-image: url('./images/fore-bird.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: -480px;
+  top: 60vh;
+}
+
+.back-bird {
+  width: 960px;
+  height: 733px;
+  background-image: url('./images/back-bird.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: absolute;
+  left: 70vw;
+}
+
+/* model grild */
+
+.clothes-pics {
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+.col-md-4 {
+  margin-bottom: 50px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* about me image */
+.about-me{
+  height:90vh;
+  width: 60vw;
+  margin: 0 auto;
+  background-image: url(./images/model1.jpg);
+  background-position: center 0px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+
+.col-md-4 img{
+  display: block;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.col-md-4 img:hover{
+  transform: scale(1.1);
+}
+.col-md-4 img:hover+h5 {
+  left: 0%;
+  opacity: 1;
+}
+
+h5{
+  position: absolute;
+  bottom: 0px;
+  left: -96%;
+  background: black;
+  color: white;
+  padding: 2px 2px;
+  font-size: 0.75rem;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+
+.window-tint {
+  height: 90vh;
+  width: 60vw;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-text {
+  color: white;
+  font-size: 2.125rem;
+  font-weight:100;
+  text-align: center;
+  line-height: 1.75rem;
+
+}
+
+.promo-text strong {
+  display: block;
+  font-size: 30px;
+}
+
+.promo-text span{
+  font-weight: 300;
+  font-size: 1rem;
+  font-style: italic;
+   color: rgba(255,255,255,0.5);
+}
+
+.window-cta{
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.window-cta:hover {
+  text-decoration: none;
+  background: white;
+  color: black;
+}
+
+p.card-text{
+  border-top: 0;
+  border-bottom: 0;
+}
+
+
+.card-body a {
+  align-items: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card-title{
+  text-align: center;
+}
+.card-img-top{
+  widht: 500px;
+  height: 150px;
+}
+.card{
+  posoition: absolute;
+}
+.post-2 , .post-3 {
+  z-index: -1111111111111 ;
+}
+.post-1{
+  transform: translate(100px, 0px);
+}
+.post-2{
+  transform: translateY(-100px);
+}
+.post-4{
+  transform: translate(-100px, 0px);
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 40px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* z-index: -800000000000; */
+}
+footer .footer-stuff{
+  width: 88vw;
+}
+footer a {
+  color: white;
+}
+footer p{
+  margin: 0;
+  border-bottom: 0;
+  border-top: 0;
+}
+
+
+ 
